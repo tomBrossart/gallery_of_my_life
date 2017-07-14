@@ -5,22 +5,33 @@ console.log('JS sourced');
 var myApp = angular.module('myApp', []);
 
 myApp.controller('PhotoController', function() {
-    // Code that runs when our controller is initialized
-    // Can think of this as our document.ready -- this means controller is ready
-    // putting a variable on our controller for ease of understanding and reading the code
-    // then anything we connect to welcome can be accessed in the html with dot notation
     var posts = this;
+    // verify ng controller and html are playing nice
     posts.test = "Make sure this works";
-    console.log(this);
-    console.log('MessageController');
-    messages.messagesArray = [];
-    messages.addPost = function(name, post) {
-      var newPost = {name: name, post: post, visible: true};
-      console.log('New Post, ', messages.messagesArray);
-      messages.messagesArray.push(newPost);
-    };
-
-    messages.deletePost = function(index) {
-      messages.messagesArray.splice(index, 1);
+    // create array for pushing photos to
+    posts.photosArray = ['img test', 'img test 2', 'img test 3'];
+    // do I want to send all of these at the same time or should I send dsc later?
+    posts.addPhotos = function(image, name, description) {
+      console.log('New photos', posts.photosArray);
     };
 });
+
+
+/*
+reference from earlier project
+
+console.log(this);
+console.log('MessageController');
+messages.messagesArray = [];
+messages.addPost = function(name, post) {
+  var newPost = {name: name, post: post, visible: true};
+  console.log('New Post, ', messages.messagesArray);
+  messages.messagesArray.push(newPost);
+};
+
+messages.deletePost = function(index) {
+  messages.messagesArray.splice(index, 1);
+};
+
+
+*/

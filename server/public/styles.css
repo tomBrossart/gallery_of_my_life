@@ -4,6 +4,12 @@ body .container {
   border-radius: 10px;
 }
 
+/* trying to get divs to center  */
+.row, div {
+  align-items: center;
+  margin: 0 auto;
+}
+
 .jumbotron {
   color: skyblue;
   background-color: black;
