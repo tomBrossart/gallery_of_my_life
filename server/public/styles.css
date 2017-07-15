@@ -1,5 +1,6 @@
 * {
   border-radius: 10px;
+  margin: 15px auto;
 }
 
 body .container {
@@ -13,14 +14,21 @@ body .container {
 }
 
 img, h2 {
-  height: 60%;
-  width: 90%;
+  /*max-height: 310px;*/
+  max-width: 300px;
+  height: 300px;
+  width: auto;
   margin: 10px auto;
   position: relative;
 }
 
+h2 {
+  border-radius: 2px solid darkBlue;
+  color: gray;
+}
+
 .jumbotron {
-  color: skyblue;
+  color: white;
   background-color: darkBlue;
   text-align: center;
   padding: 10px;
@@ -28,10 +36,22 @@ img, h2 {
 }
 
 .col-md-4 {
-  display: inline;
   background-color: skyblue;
-  height: 40%;
-  width: 300px;
+  /*max-height: 45%;*/
+  width: 30%;
+  /*height: auto;*/
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  /*float: left;*/
+  /*clear: both;*/
+}
+
+.col-sm-12 {
+  background-color: skyblue;
+  /*max-height: 45%;*/
+  width: 90%;
+  /*height: auto;*/
   border-radius: 15px;
   padding: 10px;
   margin: 10px;

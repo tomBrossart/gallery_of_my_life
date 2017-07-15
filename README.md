@@ -47,4 +47,9 @@ SATURDAY AFTERNOON
   -  figure out how to
   - add a border to
    vertical-align: middle; for h2
+
+
+SUNDAY
+[ ] review
+[ ] work on responsiveness    
 [ ] host on heroku

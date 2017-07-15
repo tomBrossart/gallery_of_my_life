@@ -19,7 +19,7 @@
     <div class="container row" ng-controller="PhotoController as posts">
       <!-- getting test data to screen -->
       <!-- <p> {{ posts.test }} </p> -->
-      <div ng-repeat="item in posts.photosArray" class="col-md-4">
+      <div ng-repeat="item in posts.photosArray" class="col-md-4 col-sm-2">
         <h2 ng-show="item.description.visible" ng-click="posts.togglePhoto(item)"> {{ item.description.text }} </h2>
         <img ng-show="item.pic.visible" ng-src="images/{{ item.pic.img }}" ng-click="posts.togglePhoto(item)" alt=" {{ item.title }}">
         <p> {{ item.title }} </p>
@@ -29,13 +29,11 @@
         <span>
         Loves: {{count}}
         </span>
-
       </div>
-
-
-
     </div>
   </body>
+  <footer>
+    <h3 class="jumbotron"> That's all folks. </h3></footer>
 </html>
 
 
