@@ -1,31 +1,36 @@
+* {
+  border-radius: 10px;
+}
+
 body .container {
   background-color: orange;
   height: 900px;
-  border-radius: 10px;
 }
 
 /* trying to get divs to center  */
 .row, div {
   align-items: center;
-  margin: 0 auto;
 }
 
-img {
-  height: 150px;
-  /*width: 150;*/
+img, h2 {
+  height: 60%;
+  width: 90%;
+  margin: 10px auto;
+  position: relative;
 }
 
 .jumbotron {
   color: skyblue;
-  background-color: black;
+  background-color: darkBlue;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  margin: 3px auto;
 }
 
 .col-md-4 {
   display: inline;
   background-color: skyblue;
-  height: 150px;
+  height: 40%;
   width: 300px;
   border-radius: 15px;
   padding: 10px;
@@ -34,18 +39,8 @@ img {
   /*clear: both;*/
 }
 
-.btn-danger {
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  border-radius: 5px;
-}
-
-.search {
-  padding: 50px;
-  background-color: gray;
-}
-
-.submit {
-  padding-bottom: 15px;
+p {
+  background-color: darkBlue;
+  text-align: center;
+  color: white;
 }

@@ -11,6 +11,11 @@ Heroku - to make site available to the world
 
 --------------------------
 
+## Refactor Ideas
+[ ] Create data persistance for likes and comments
+[ ] instead of hiding photo have opacity drop to 0.2 and overlay description
+[ ] Create a form that will take comments for each of your photos. Display the comments when a "Show Comments" button is clicked.
+
 Rough Work Process
 
 FRIDAY
@@ -26,20 +31,20 @@ SATURDAY MORNING
 [X] select 6 photos and save in imags folder
 [X] create array of images in client js
 [X] create array of titles
-[ ] create array of descriptions
+[X] create array of descriptions
 [X] create ng-repeat div to add imgs from client.js to DOM and use ng-src?
   https://docs.angularjs.org/api/ng/directive/ngSrc
-[ ] create counters (arrays) for each photos likes using ngClick
-<button ng-click="count = count + 1" ng-init="count=0">
-Increment
-</button>
-<span>
-count: {{count}}
-</span>
-[ ] setup toggle so that clicking photo drops opacity to 0.2 and shows text description of image
+[X] create counters (arrays) for each photos likes using ngClick
+[X] setup toggle so that clicking photo hides it and shows text description of image
   use ng-click on the photo...
-[ ] add heart icon (as button?) that when clicked increases loved count
+[X] add heart icon (as button?) that when clicked increases loved count
 
 SATURDAY AFTERNOON
 [ ] refine CSS
+  - border radius photos
+  - center photos in their divs
+  - crop all photos to square
+  -  figure out how to
+  - add a border to
+   vertical-align: middle; for h2
 [ ] host on heroku

@@ -17,13 +17,18 @@
   </header>
   <body ng-app="myApp" class="container">
     <div class="container row" ng-controller="PhotoController as posts">
-      <p> {{ posts.test }} </p>
-      <!-- similar to var intro = what you type -->
-
       <!-- getting test data to screen -->
-      <div ng-repeat="item in posts.testObject" class="col-md-4">
-        <img ng-src="images/{{ item.img }}" alt=" {{ item.title }}">
+      <!-- <p> {{ posts.test }} </p> -->
+      <div ng-repeat="item in posts.photosArray" class="col-md-4">
+        <h2 ng-show="item.description.visible" ng-click="posts.togglePhoto(item)"> {{ item.description.text }} </h2>
+        <img ng-show="item.pic.visible" ng-src="images/{{ item.pic.img }}" ng-click="posts.togglePhoto(item)" alt=" {{ item.title }}">
         <p> {{ item.title }} </p>
+        <button class="btn btn-info btn-md" ng-click="count = count + 1" ng-init="count=0">
+         <span class="glyphicon glyphicon-heart"></span>
+        </button>
+        <span>
+        Loves: {{count}}
+        </span>
 
       </div>
 

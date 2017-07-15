@@ -9,37 +9,43 @@ myApp.controller('PhotoController', function() {
     // verify ng controller and html are playing nice
     posts.test = "Make sure this works";
     // create array of objects for titles, photos, descriptions
-    posts.testObject = [
+    posts.photosArray = [
         {
-          img: 'image_1.png',
+          pic: {img: 'image_1.png', visible: true},
           title: 'Lago Atitlan in Guatemala',
+          description: {text: 'What a climb! The view of the volcanos and the lake was stunning', visible: false},
         },
         {
-          img: 'image_2.png',
+          pic: {img: 'image_2.png', visible: true},
           title: 'Brother Matt\'s Wedding',
+          description: {text: 'The second marriage in my family was a great Houston, TX gathering.', visible: false},
         },
         {
-          img: 'image_3.png',
+          pic: {img: 'image_3.png', visible: true},
           title: 'Friendly bus rider in Thailand',
+          description: {text: 'Exhausted Tom sleeps on bus ride to refugee camp while his seat mate smiles.', visible: false},
         },
         {
-          img: 'image_4.png',
+          pic: {img: 'image_4.png', visible: true},
           title: 'Life changing electric bike purcahse',
+          description: {text: 'Owning an electric bike has enabled me to bike-commute year round with much less sweat, and more smiles.', visible: false},
         },
         {
-          img: 'image_5.png',
+          pic: {img: 'image_5.png', visible: true},
           title: 'Wonderful encounter',
+          description: {text: 'I met Dessa at a Coco event, she is a great speaker and performer!', visible: false},
         },
         {
-          img: 'image_6.png',
+          pic: {img: 'image_6.png', visible: true},
           title: 'Growing with a new family',
+          description: {text: 'Getting to know my fiance\'s family over the last few years has been great.', visible: false},
         },
     ];
-    // posts.photosArray = ['image_1.png', 'image_2.png', 'image_3.png', 'image_4.png', 'image_5.png', 'image_6.png'];
-    // posts.titleArray = ['Lago Atitlan in Guatemala', 'Brother Matt\'s Wedding', 'Friendly bus rider in Thailand', 'Life changing electric bike purcahse', 'Wonderful encounter', 'Growing with a new family'];
     // // do I want to send all of these at the same time or should I send dsc later?
-    posts.addPhotos = function(image, name, description) {
-      console.log('New photos', posts.photosArray);
+    posts.togglePhoto = function(item) {
+      console.log('Toggle clicked', posts.photosArray);
+      item.pic.visible = !item.pic.visible;
+      item.description.visible = !item.description.visible;
     };
 });
 
