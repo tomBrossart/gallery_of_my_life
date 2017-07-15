@@ -10,6 +10,11 @@ body .container {
   margin: 0 auto;
 }
 
+img {
+  height: 150px;
+  /*width: 150;*/
+}
+
 .jumbotron {
   color: skyblue;
   background-color: black;

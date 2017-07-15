@@ -17,19 +17,27 @@ FRIDAY
 [X] initial scaffolding
 [X] sketch outline
 [X] psuedo code and schedule
-[ ] use bootstrap to hardcode wireframe
-[ ] stub out PhotoController
-[ ] experiment with angular
+[X] use bootstrap to hardcode wireframe
+[X] stub out PhotoController
+[X] experiment with angular
 
 
 SATURDAY MORNING
-[ ] select 6 photos and save in imags folder
-[ ] create array of images in client js
-[ ] create array of titles
+[X] select 6 photos and save in imags folder
+[X] create array of images in client js
+[X] create array of titles
 [ ] create array of descriptions
-[ ] create ng-repeat div to add imgs from client.js to DOM
-[ ] create counters (arrays) for each photos likes
+[X] create ng-repeat div to add imgs from client.js to DOM and use ng-src?
+  https://docs.angularjs.org/api/ng/directive/ngSrc
+[ ] create counters (arrays) for each photos likes using ngClick
+<button ng-click="count = count + 1" ng-init="count=0">
+Increment
+</button>
+<span>
+count: {{count}}
+</span>
 [ ] setup toggle so that clicking photo drops opacity to 0.2 and shows text description of image
+  use ng-click on the photo...
 [ ] add heart icon (as button?) that when clicked increases loved count
 
 SATURDAY AFTERNOON
