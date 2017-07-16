@@ -5,7 +5,7 @@
 
 body .container {
   background-color: orange;
-  height: 900px;
+  height: 90%;
 }
 
 /* trying to get divs to center  */
@@ -14,7 +14,7 @@ body .container {
 }
 
 img, h2 {
-  /*max-height: 310px;*/
+  max-height: 310px;
   max-width: 300px;
   height: 300px;
   width: auto;
@@ -23,8 +23,18 @@ img, h2 {
 }
 
 h2 {
-  border-radius: 2px solid darkBlue;
+  border: 5px solid darkBlue;
   color: gray;
+  /*margin-top: 10%;
+  margin-bottom: 10%;*/
+  display: flex;
+  align-content: center;
+  padding: 15px;
+  max-height: 310px;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 .jumbotron {
@@ -35,19 +45,17 @@ h2 {
   margin: 3px auto;
 }
 
-.col-md-4 {
+.col-md-3 {
   background-color: skyblue;
-  /*max-height: 45%;*/
+  /*max-height: 40%;*/
   width: 30%;
-  /*height: auto;*/
+  height: 450px;
   border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
-  /*float: left;*/
-  /*clear: both;*/
+  padding: 15px;
+  margin: 15px;*/
 }
 
-.col-sm-12 {
+.col-sm-6 {
   background-color: skyblue;
   /*max-height: 45%;*/
   width: 90%;

@@ -14,6 +14,7 @@ Heroku - to make site available to the world
 ## Refactor Ideas
 [ ] Create data persistance for likes and comments
 [ ] instead of hiding photo have opacity drop to 0.2 and overlay description
+[ ] improve responsiveness
 [ ] Create a form that will take comments for each of your photos. Display the comments when a "Show Comments" button is clicked.
 
 Rough Work Process
@@ -40,16 +41,15 @@ SATURDAY MORNING
 [X] add heart icon (as button?) that when clicked increases loved count
 
 SATURDAY AFTERNOON
-[ ] refine CSS
+[X] refine CSS
   - border radius photos
   - center photos in their divs
-  - crop all photos to square
   -  figure out how to
   - add a border to
    vertical-align: middle; for h2
 
 
 SUNDAY
-[ ] review
-[ ] work on responsiveness    
-[ ] host on heroku
+[X] review
+[X] work on responsiveness
+[X] host on heroku
